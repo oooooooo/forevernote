@@ -26,5 +26,8 @@ Style/Documentation:
 Style/SingleSpaceBeforeFirstArg:
   Enabled: false
 
+LineLength:
+  Max: 160
+
 MethodLength:
   Max: 12
