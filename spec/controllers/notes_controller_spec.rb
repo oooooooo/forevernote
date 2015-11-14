@@ -23,11 +23,11 @@ RSpec.describe NotesController, type: :controller do
   # Note. As you add validations to Note, be sure to
   # adjust the attributes here as well.
   let(:valid_attributes) do
-    skip('Add a hash of attributes valid for your model')
+    { title: 'hello', body: 'world' }
   end
 
   let(:invalid_attributes) do
-    skip('Add a hash of attributes invalid for your model')
+    { title: '', body: '' }
   end
 
   # This should return the minimal set of values that should be in the session

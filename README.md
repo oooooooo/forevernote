@@ -1,3 +1,6 @@
+[![Code Climate](https://codeclimate.com/github/oooooooo/forevernote/badges/gpa.svg)](https://codeclimate.com/github/oooooooo/forevernote)
+[![Test Coverage](https://codeclimate.com/github/oooooooo/forevernote/badges/coverage.svg)](https://codeclimate.com/github/oooooooo/forevernote/coverage)
+
 # Forevernote
 Yet another evernote clone.
 
