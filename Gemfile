@@ -63,9 +63,9 @@ group :development, :test do
   gem 'binding_of_caller'
   gem 'bundler-audit', require: false
   gem 'did_you_mean'
+  gem 'dotenv-rails'
   gem 'bullet'
-  gem 'xmpp4r'
-  gem 'figaro'
+  gem 'guard'
   gem 'guard-ctags-bundler'
   gem 'guard-brakeman'
   gem 'guard-bundler'
