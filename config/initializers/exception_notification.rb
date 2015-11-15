@@ -16,15 +16,11 @@ if Rails.env.production?
 
     # Email notifier sends notifications by email.
 
-    config.add_notifier :email,       email_prefix: '[#forevernote]',
-                                      sender_address: %("notifier" <bluecatbluedog@hotmail.com>),
-                                      exception_recipients: ['bluecatbluedog@hotmail.com']
-
-    config.add_notifier :slack,       webhook_url: 'https://hooks.slack.com/services/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',
-                                      channel: '#forevernote',
-                                      additional_parameters: {
-                                        # icon_url: 'http://'
-                                      }
+    config.add_notifier :slack, webhook_url: ENV['SLACK_WEBHOOK_URL'],
+                                channel: '#forevernote',
+                                additional_parameters: {
+                                  # icon_url: 'http://'
+                                }
 
     # Campfire notifier sends notifications to your Campfire room. Requires 'tinder' gem.
     # config.add_notifier :campfire, {
