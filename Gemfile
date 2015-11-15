@@ -124,6 +124,7 @@ gem 'browser'
 gem 'cancancan'
 gem 'coffee-rails-source-maps'
 gem 'config'
+gem 'coveralls', require: false
 gem 'devise'
 gem 'devise-bootstrap-views'
 gem 'devise-i18n'
