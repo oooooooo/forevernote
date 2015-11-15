@@ -14,6 +14,7 @@ Yet another evernote clone.
 - OAuth ( Facebook, github )
 - Elasticsearch
 - Collaboration ( Read/Write permissions )
+- Tagged
 - Furikaeri dashboard aka retrospective.
 - Document revision control
 
