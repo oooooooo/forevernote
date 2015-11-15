@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   root 'notes#index'
 
   resources :notes
+  get 'search' => 'notes#search'
 
   get 'dashboard' => 'dashboard#index'
 

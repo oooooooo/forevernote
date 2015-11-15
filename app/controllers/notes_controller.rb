@@ -4,7 +4,7 @@ class NotesController < ApplicationController
   # GET /notes
   # GET /notes.json
   def index
-    @notes = Note.order('updated_at desc')
+    @notes = Note.order(updated_at: :desc)
   end
 
   # GET /notes/1
@@ -60,6 +60,11 @@ class NotesController < ApplicationController
       format.html { redirect_to notes_url, notice: 'Note was successfully destroyed.' }
       format.json { head :no_content }
     end
+  end
+
+  def search
+    @notes = Note.search params[:query], order: { _score: :desc }
+    render :index
   end
 
   private

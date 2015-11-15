@@ -1,4 +1,4 @@
-table.table.table-striped.table-hover
+table.table.table-striped.table-hover.row
   thead
     tr
       th Title
@@ -8,9 +8,9 @@ table.table.table-striped.table-hover
   tbody
     - @notes.each do |note|
       tr
-        td = link_to note.title, edit_note_path(note)
-        td = link_to truncate(note.body, length: 200), edit_note_path(note)
-        td
+        td.col-xs-4 = link_to note.title, edit_note_path(note)
+        td.col-xs-7 = link_to truncate(note.body, length: 200), edit_note_path(note)
+        td.col-xs-1.text-right
           = note.updated_at.strftime('%Y-%m-%d')
           br
           = note.updated_at.strftime('%H:%M')
