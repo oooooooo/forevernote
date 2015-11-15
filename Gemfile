@@ -36,7 +36,7 @@ gem 'puma'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug'
+  gem 'byebug', '~> 8.2'
 end
 
 group :development do
@@ -77,7 +77,7 @@ group :development, :test do
   gem 'hirb-unicode'
   gem 'letter_opener'
   gem 'pry-alias'
-  gem 'pry-byebug'
+  gem 'pry-byebug', '~> 3.3'
   gem 'pry-coolline'
   gem 'pry-rails'
   gem 'quiet_assets'
