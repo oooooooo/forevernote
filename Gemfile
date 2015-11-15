@@ -98,9 +98,7 @@ group :test do
   gem 'launchy'
   gem 'metric_fu'
   gem 'poltergeist'
-  gem 'simplecov'
-  gem 'simplecov-json'
-  gem 'simplecov-rcov'
+  gem 'simplecov', require: false
   gem 'timecop'
   gem 'vcr'
   gem 'webmock'
@@ -111,7 +109,9 @@ group :production, :staging do
 end
 
 source 'https://rails-assets.org' do
+  gem 'rails-assets-highlightjs'
   gem 'rails-assets-marked'
+  gem 'rails-assets-textarea-autosize'
 end
 
 gem 'activerecord-import'

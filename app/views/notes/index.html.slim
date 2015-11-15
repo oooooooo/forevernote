@@ -1,23 +1,16 @@
-h1 Listing notes
-
-table
+table.table.table-striped.table-hover
   thead
     tr
       th Title
       th Body
-      th
-      th
-      th
+      th Date
 
   tbody
     - @notes.each do |note|
       tr
-        td = note.title
-        td = note.body
-        td = link_to 'Show', note
-        td = link_to 'Edit', edit_note_path(note)
-        td = link_to 'Destroy', note, data: {:confirm => 'Are you sure?'}, :method => :delete
-
-br
-
-= link_to 'New Note', new_note_path
+        td = link_to note.title, edit_note_path(note)
+        td = link_to truncate(note.body, length: 200), edit_note_path(note)
+        td
+          = note.updated_at.strftime('%Y-%m-%d')
+          br
+          = note.updated_at.strftime('%H:%M')

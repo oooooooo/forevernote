@@ -1,8 +1,8 @@
-h1 Editing note
+.pull-right
+  = link_to fa_icon('trash-o', text: 'Delete'), @note, class: 'btn btn-danger', data: {confirm: 'Are you sure?'}, method: :delete
 
-== render 'form'
-
-= link_to 'Show', @note
-'|
-= link_to 'Back', notes_path
-
+.row
+  .col-xs-6
+    == render 'form', { note: @note }
+  .colxs-6
+    #preview

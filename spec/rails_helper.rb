@@ -6,12 +6,17 @@ abort("The Rails environment is running in production mode!") if Rails.env.produ
 require 'spec_helper'
 require 'rspec/rails'
 
-require 'codeclimate-test-reporter'
-CodeClimate::TestReporter.start
-WebMock.disable_net_connect!(allow: 'codeclimate.com')
+if FileTest.exist? Rails.root / 'coverage'
+  require 'simplecov'
+  SimpleCov.start 'rails'
+else
+  require 'codeclimate-test-reporter'
+  CodeClimate::TestReporter.start
+  WebMock.disable_net_connect!(allow: 'codeclimate.com')
 
-require 'coveralls'
-Coveralls.wear!
+  require 'coveralls'
+  Coveralls.wear!
+end
 
 # Add additional requires below this line. Rails is not loaded until this point!
 

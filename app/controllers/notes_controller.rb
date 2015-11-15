@@ -4,12 +4,13 @@ class NotesController < ApplicationController
   # GET /notes
   # GET /notes.json
   def index
-    @notes = Note.all
+    @notes = Note.order('updated_at desc')
   end
 
   # GET /notes/1
   # GET /notes/1.json
   def show
+    render :edit
   end
 
   # GET /notes/new

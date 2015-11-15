@@ -10,8 +10,10 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require highlightjs
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require marked
+//= require textarea-autosize
+//= require turbolinks
 //= require_tree .

@@ -5,8 +5,12 @@
 # Forevernote
 Yet another evernote clone.
 
+# Featured
+- Markdown ( Realtime preview, syntax highlight )
+
 # TODO
-- Markdown
+- Auto save
+- Pager
 - OAuth ( Facebook, github )
 - Elasticsearch
 - Collaboration ( Read/Write permissions )
