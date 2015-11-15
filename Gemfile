@@ -63,7 +63,6 @@ group :development, :test do
   gem 'binding_of_caller'
   gem 'bundler-audit', require: false
   gem 'did_you_mean'
-  gem 'dotenv-rails'
   gem 'bullet'
   gem 'guard'
   gem 'guard-ctags-bundler'
@@ -115,34 +114,33 @@ source 'https://rails-assets.org' do
 end
 
 gem 'activerecord-import'
-gem 'airbrake'
+gem 'email_validator'
+gem 'searchkick'
+
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass'
 gem 'bootstrap_form'
 gem 'bootswatch-rails'
-gem 'browser'
-gem 'cancancan'
 gem 'coffee-rails-source-maps'
+gem 'font-awesome-rails'
+gem 'kaminari'
+gem 'kaminari-i18n'
+gem 'slim-rails'
+
 gem 'config'
-gem 'coveralls', require: false
+gem 'dotenv-rails'
+gem 'whenever'
+
+gem 'cancancan'
 gem 'devise'
 gem 'devise-bootstrap-views'
 gem 'devise-i18n'
 gem 'devise-i18n-views'
 gem 'devise_ldap_authenticatable'
-gem 'email_validator'
+
+gem 'airbrake'
+gem 'coveralls', require: false
 gem 'exception_notification'
-gem 'font-awesome-rails'
-gem 'kaminari'
-gem 'kaminari-i18n'
-gem 'net-ldap'
-gem 'net-ping'
 gem 'newrelic_rpm'
-gem 'paranoia'
-gem 'ransack'
-gem 'searchkick'
 gem 'slack-notifier'
-gem 'slim-rails'
 gem 'travis'
-gem 'ungarbled'
-gem 'whenever'

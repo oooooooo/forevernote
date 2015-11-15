@@ -8,6 +8,7 @@ Yet another evernote clone.
 
 # Featured
 - Markdown ( Realtime preview, syntax highlight )
+- Full text search
 
 # Setup
 ```
@@ -19,7 +20,6 @@ $ cp .env.sample .env
 - Auto save
 - Pager
 - OAuth ( Facebook, github )
-- Elasticsearch
 - Collaboration ( Read/Write permissions )
 - Tagged
 - Furikaeri dashboard aka retrospective.
