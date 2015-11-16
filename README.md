@@ -17,6 +17,7 @@ $ cp .env.sample .env
 ```
 
 # TODO
+- Heroku button
 - Auto save
 - Pager
 - OAuth ( Facebook, github )
