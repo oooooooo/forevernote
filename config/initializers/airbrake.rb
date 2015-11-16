@@ -5,3 +5,6 @@ Airbrake.configure do |config|
   config.port    = 80
   config.secure  = config.port == 443
 end
+
+p Socket.gethostname
+p ENV['AIRBRAKE_PROJECT_API_KEY']
