@@ -1,15 +1,13 @@
 table.table.table-striped.table-hover
   thead
     tr
-      th Title
-      th Body
+      th Note
       th Date
 
   tbody
     - @notes.each do |note|
       tr
-        td.col-xs-4 = link_to note.title, edit_note_path(note)
-        td.col-xs-7 = link_to truncate(note.body, length: 200), edit_note_path(note)
+        td.col-xs-11 = link_to truncate(note.body, length: 140), edit_note_path(note)
         td.col-xs-1.text-right
           = note.updated_at.strftime('%Y-%m-%d')
           br
