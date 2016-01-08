@@ -127,7 +127,7 @@ gem 'kaminari'
 gem 'kaminari-i18n'
 gem 'slim-rails'
 
-gem 'browser-timezone-rails'
+gem 'browser-timezone-rails', github: 'kbaum/browser-timezone-rails'
 gem 'config'
 gem 'dotenv-rails'
 gem 'whenever'
