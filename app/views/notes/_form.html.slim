@@ -8,4 +8,6 @@
 
   .field
     = f.text_area :body, hide_label: true
+  .pull-right
+    = link_to fa_icon('question-circle', text: 'makrdown'), 'https://help.github.com/articles/markdown-basics/', target: '_blank'
   .actions = f.submit
