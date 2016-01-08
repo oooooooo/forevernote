@@ -5,6 +5,7 @@
 
 # Forevernote
 Yet another evernote clone.
+[demo](http://forevernote-demo.herokuapp.com/)
 
 # Featured
 - Markdown ( Realtime preview, syntax highlight )
@@ -13,7 +14,10 @@ Yet another evernote clone.
 # Setup
 ```
 $ brew install elasticsearch
+$ elasticsearch
 $ cp .env.sample .env
+$ rake db:create db:migrate db:seed
+$ rails server
 ```
 
 # TODO
