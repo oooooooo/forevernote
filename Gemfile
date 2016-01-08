@@ -84,7 +84,6 @@ group :development, :test do
   gem 'quiet_assets'
   gem 'rack-dev-mark'
   gem 'rails-erd'
-  # gem 'rails-flog'
   gem 'rspec-rails'
   gem 'rubocop'
 end
