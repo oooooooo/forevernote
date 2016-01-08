@@ -50,6 +50,7 @@ end
 gem 'therubyracer', platforms: :ruby
 
 group :development do
+  gem 'airbrake'
   gem 'brakeman'
   gem 'rack-mini-profiler'
   gem 'rails-footnotes'
@@ -138,7 +139,6 @@ gem 'devise-i18n'
 gem 'devise-i18n-views'
 gem 'devise_ldap_authenticatable'
 
-gem 'airbrake'
 gem 'coveralls', require: false
 gem 'exception_notification'
 gem 'newrelic_rpm'
