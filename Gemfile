@@ -1,17 +1,22 @@
 source 'https://rubygems.org'
 
-ruby '2.3.0'
+git_source(:github) do |repo_name|
+  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
+  "https://github.com/#{repo_name}.git"
+end
+
+ruby '2.5'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.5'
+gem 'rails', '5.1.4'
 # Use PostgreSQL as the database for Active Record
-gem 'pg'
+gem 'pg', '~> 0.18'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 4.1.0'
+gem 'coffee-rails', '~> 4.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
@@ -36,18 +41,22 @@ gem 'puma'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', '~> 8.2'
+  gem 'byebug'
+  gem 'capybara', '~> 2.13'
+  gem 'selenium-webdriver'
 end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console'
+  gem 'web-console', '>= 3.3.0'
+  gem 'listen', '>= 3.0.5', '< 3.2'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+  gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
-gem 'therubyracer', platforms: :ruby
+# gem 'therubyracer', platforms: :ruby
 
 group :development do
   gem 'airbrake'
@@ -62,16 +71,15 @@ group :development, :test do
   gem 'awesome_print'
   gem 'better_errors'
   gem 'binding_of_caller'
+  gem 'bullet'
   gem 'bundler-audit', require: false
   gem 'did_you_mean'
-  gem 'bullet'
   gem 'guard'
-  gem 'guard-ctags-bundler'
   gem 'guard-brakeman'
   gem 'guard-bundler'
+  gem 'guard-ctags-bundler'
   gem 'guard-livereload'
   gem 'guard-rails'
-  gem 'guard-rails_best_practices', github: 'logankoester/guard-rails_best_practices'
   gem 'guard-rspec'
   gem 'guard-rubocop'
   gem 'hirb'
@@ -81,7 +89,6 @@ group :development, :test do
   gem 'pry-byebug', '~> 3.3'
   gem 'pry-coolline'
   gem 'pry-rails'
-  gem 'quiet_assets'
   gem 'rack-dev-mark'
   gem 'rails-erd'
   gem 'rspec-rails'
@@ -89,7 +96,6 @@ group :development, :test do
 end
 
 group :test do
-  gem 'capybara'
   gem 'codeclimate-test-reporter', group: :test, require: nil
   gem 'database_rewinder'
   gem 'factory_girl_rails'
@@ -97,7 +103,7 @@ group :test do
   gem 'launchy'
   gem 'metric_fu'
   gem 'poltergeist'
-  gem 'simplecov', require: false
+  gem 'simplecov'
   gem 'timecop'
   gem 'vcr'
   gem 'webmock'
@@ -107,11 +113,11 @@ group :production, :staging do
   gem 'rails_12factor'
 end
 
-source 'https://rails-assets.org' do
-  gem 'rails-assets-highlightjs'
-  gem 'rails-assets-marked'
-  gem 'rails-assets-textarea-autosize'
-end
+# source 'https://rails-assets.org' do
+#   gem 'rails-assets-highlightjs'
+#   gem 'rails-assets-marked'
+#   gem 'rails-assets-textarea-autosize'
+# end
 
 gem 'activerecord-import'
 gem 'email_validator'
@@ -121,13 +127,12 @@ gem 'autoprefixer-rails'
 gem 'bootstrap-sass'
 gem 'bootstrap_form'
 gem 'bootswatch-rails'
-gem 'coffee-rails-source-maps'
 gem 'font-awesome-rails'
 gem 'kaminari'
 gem 'kaminari-i18n'
 gem 'slim-rails'
 
-gem 'browser-timezone-rails', github: 'kbaum/browser-timezone-rails'
+gem 'browser-timezone-rails'
 gem 'config'
 gem 'dotenv-rails'
 gem 'whenever'

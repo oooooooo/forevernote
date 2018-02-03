@@ -12,8 +12,8 @@
 //
 //= require jquery
 //= require browser_timezone_rails/set_time_zone
-//= require highlightjs
-//= require jquery.cookie
+//= require highlight.js/lib/highlight.js
+//  require jquery.cookie
 //= require jquery_ujs
 //= require jstz
 //= require marked
