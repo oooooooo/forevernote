@@ -92,6 +92,7 @@ group :development, :test do
   gem 'rack-dev-mark'
   gem 'rails-erd'
   gem 'rspec-rails'
+  gem 'rubocop', require: false
 end
 
 group :test do
