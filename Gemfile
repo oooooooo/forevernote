@@ -5,7 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-ruby '2.5'
+ruby '2.5.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1'
@@ -89,7 +89,7 @@ group :development, :test do
   gem 'rack-dev-mark'
   gem 'rails-erd'
   gem 'rspec-rails'
-  gem 'rubocop', '~> 0.56', require: false
+  gem 'rubocop', require: false
 end
 
 group :test do

@@ -701,7 +701,7 @@ DEPENDENCIES
   rails_12factor
   rails_best_practices
   rspec-rails
-  rubocop (~> 0.56)
+  rubocop
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   searchkick
@@ -721,7 +721,7 @@ DEPENDENCIES
   whenever
 
 RUBY VERSION
-   ruby 2.5.0p0
+   ruby 2.5.1p57
 
 BUNDLED WITH
    1.16.2
