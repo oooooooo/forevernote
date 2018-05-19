@@ -3,10 +3,6 @@ env:
     - CC_TEST_REPORTER_ID=c6b361d7bddeefccad59e82272a3d861675625ff7b3a0d9236b9c7b54fcdbaab
     - DB=postgresql
 language: ruby
-cache:
-  bundler: true
-  directories:
-    - node_modules
 rvm:
   - 2.5.1
 bundler_args: --jobs=2
