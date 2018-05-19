@@ -8,7 +8,7 @@ end
 ruby '2.5'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '5.1'
+gem 'rails', '~> 5.1'
 # Use PostgreSQL as the database for Active Record
 gem 'pg', '~> 0.18'
 # Use SCSS for stylesheets
@@ -62,7 +62,6 @@ group :development do
   gem 'airbrake'
   gem 'brakeman'
   gem 'rack-mini-profiler'
-  gem 'rails-footnotes'
   gem 'rails_best_practices'
 end
 
@@ -82,8 +81,6 @@ group :development, :test do
   gem 'guard-rails'
   gem 'guard-rspec'
   gem 'guard-rubocop'
-  gem 'hirb'
-  gem 'hirb-unicode'
   gem 'letter_opener'
   gem 'pry-alias'
   gem 'pry-byebug', '~> 3.3'
@@ -92,7 +89,7 @@ group :development, :test do
   gem 'rack-dev-mark'
   gem 'rails-erd'
   gem 'rspec-rails'
-  gem 'rubocop', require: false
+  gem 'rubocop', '~> 0.56', require: false
 end
 
 group :test do
