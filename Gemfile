@@ -150,3 +150,5 @@ gem 'exception_notification'
 gem 'newrelic_rpm'
 gem 'slack-notifier'
 gem 'travis'
+
+gem 'rest-client', '~> 1.7.3'
