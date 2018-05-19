@@ -1,8 +1,10 @@
 # http://blog.onk.ninja/2015/10/27/rubocop-getting-started
 # https://gist.github.com/onk/38bfbd78899d892e0e83
 
+Rail:
+  Enabled: true
+
 AllCops:
-  RunRailsCops: true
   Exclude:
     - 'bin/**/*'
     - 'config/**/*'
@@ -22,7 +24,7 @@ Style/CommentAnnotation:
 Style/Documentation:
   Enabled: false
 
-Style/SingleSpaceBeforeFirstArg:
+Layout/SpaceBeforeFirstArg:
   Enabled: false
 
 LineLength:
