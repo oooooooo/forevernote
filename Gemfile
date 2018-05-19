@@ -104,7 +104,7 @@ group :test do
   gem 'launchy'
   gem 'metric_fu'
   gem 'poltergeist'
-  gem 'simplecov'
+  gem 'simplecov', '~> 0.13.0'
   gem 'timecop'
   gem 'vcr'
   gem 'webmock'
