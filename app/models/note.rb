@@ -1,4 +1,6 @@
-class Note < ActiveRecord::Base
+# frozen_string_literal: true
+
+class Note < ApplicationRecord
   searchkick
 
   after_commit :reindex_note

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe 'notes/show', type: :view do
@@ -5,7 +7,7 @@ RSpec.describe 'notes/show', type: :view do
     @note = assign(:note, Note.create!(
                             title: 'Title',
                             body: 'MyText'
-    ))
+                          ))
   end
 
   it 'renders attributes in <p>' do

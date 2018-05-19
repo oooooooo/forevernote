@@ -1,10 +1,12 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe 'notes/edit', type: :view do
   before(:each) do
     @note = assign(:note, Note.create!(
                             body: 'MyText'
-    ))
+                          ))
   end
 
   it 'renders the edit note form' do
