@@ -96,15 +96,15 @@ group :development, :test do
 end
 
 group :test do
-  gem 'rails-controller-testing'
-  gem 'codeclimate-test-reporter', group: :test, require: nil
+  # gem 'codeclimate-test-reporter', '~> 1.0.0'
   gem 'database_rewinder'
   gem 'factory_bot_rails'
   gem 'faker'
   gem 'launchy'
   gem 'metric_fu'
   gem 'poltergeist'
-  gem 'simplecov', '~> 0.13.0'
+  gem 'rails-controller-testing'
+  gem 'simplecov', '~> 0.13.0', require: false
   gem 'timecop'
   gem 'vcr'
   gem 'webmock'
